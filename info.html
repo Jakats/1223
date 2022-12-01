@@ -6,6 +6,15 @@
 </head>
 <body>
 
+<script type="text/javascript" >
+    //Function snipets from: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+    function scrollfunction(elid) {
+        const element = document.getElementById(elid);
+        element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+</script>
+
+
 <div class="navbar">
     <ul>
         <li><a href="home.html">Avaleht</a></li>
@@ -16,15 +25,23 @@
 
 <p>&nbsp;</p>
 
-<p>Sony Playstation 5</p>
-<p>Playstation 5 on Sony kõige uuem mängukonsool, mida tutvustati maailmale 2020 aasta  Novembris. Tegemist on tippklassi mängukonsooliga, mis suudab edastada kuni 8k kvaliteediga pilti. Lisaks on konsoolil uue generatsiooni pult, mille haptiline tagasiside on ennekuulmatult hea.
-<br>Lisaks pakub Sony Playstation 5-le eksklusiivseid mänge, millest võib välja tuua näiteks: Spider-Man Miles-Morales,Sackboy: a Big Adventure ja Gran Turismo 7.
-</p>
-<p>Xbox Series X</p>
+<div class="quickselect">
+    <ul>
+        <li><input type="image" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Xbox_Series_X_logo.svg"  onClick="scrollfunction('xbox')"></li>
+        <li><input type="image" src="https://www.logo.wine/a/logo/PlayStation/PlayStation-Logo.wine.svg"  onClick="scrollfunction('ps5')"></li>
+        <li><input type="image" src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Nintendo_Switch_Logo.svg"  onClick="scrollfunction('switch')"></li>
+    </ul>
+</div>
+
+<p id="xbox">Xbox Series X</p>
 <p>Xbox Series X on Microsofti vastus Sony Playstation 5-le. Tegu on mängukonsooliga, mis on võimsam ja ilusama disainiga, kui Playstation 5, kuid eksklusiivsied mänge on Xbox-il palju vähem kui Playstationil. 
 <br>Kuid kui Sony konsoolidel on peale kahte aastat ikka tarneraskusi, on Microsoft raskustega hakkama saanud ning konsoole leidub pea igas tehnikapoes.
 </p>
-<p>Nintendo Switch</p>
+<p id="ps5">Sony Playstation 5</p>
+<p>Playstation 5 on Sony kõige uuem mängukonsool, mida tutvustati maailmale 2020 aasta  Novembris. Tegemist on tippklassi mängukonsooliga, mis suudab edastada kuni 8k kvaliteediga pilti. Lisaks on konsoolil uue generatsiooni pult, mille haptiline tagasiside on ennekuulmatult hea.
+<br>Lisaks pakub Sony Playstation 5-le eksklusiivseid mänge, millest võib välja tuua näiteks: Spider-Man Miles-Morales,Sackboy: a Big Adventure ja Gran Turismo 7.
+</p>
+<p id="switch">Nintendo Switch</p>
 <p>Nintendo Switch on hübriid mängukonsool, millega saab mängida nii kodus kui liikudes. Switch on peresõbralik mängukonsool, mille populaarsemad mängud on näiteks: Mario kart 8, Super Mario Odyssey ja the Legend of Zelda. 
 
 </p>

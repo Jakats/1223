@@ -34,28 +34,6 @@ div.navbar li a:hover {
     background-color: #111;
 }
 
-.quickselect {
-    position: relative;
-    align-content: center;
-}
-
-div.quickselect ul {
-    justify-content: center;
-    display: flex;  
-    padding: 0;
-    list-style-type: none;
-    overflow: hidden;
-}
-  
-div.quickselect li {
-    float: left;
-    padding-left: 3%;
-}
-
-div.quickselect input {
-    height: 20vh;
-}
-
 table {
     position: relative;
     margin-top: 0px;
