@@ -2,64 +2,29 @@
 <html>
 <head>
 <title>Avaleht</title><meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial;
-  color: rgb(224, 14, 14);
-}
-
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.left {
-  left: 0;
-  background-color: rgb(0, 0, 0);
-}
-
-.right {
-  right: 0;
-  background-color: rgb(65, 163, 228);
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.centered img {
-  width: 150px;
-  border-radius: 50%;
-}
-</style>
+<link rel="stylesheet" href="home.css">
 </head>
 <body>
-    
+
+<div class="navbar">
+  <ul>
+    <li><a href="home.html">Avaleht</a></li>
+    <li><a href="info.html">Info</a></li>
+    <li><a href="vordlus.html">Võrdlus</a></li>
+  </ul> 
+</div>
+
 <div class="split left">
-    <h1>
-        <a href="home.html">Avaleht</a>
-        <a href="info.html">Info</a>
-        <a href="vordlus.html">Võrdlus</a>
-    </h1>
-    <div class="centered">
-      <h2><a style="text-decoration:none;" href="info.html">Mängukonsoolide info</a></h2>
-    </div>
+  <div class="centered">
+    <h2><a style="text-decoration:none;" href="info.html">Mängukonsoolide info</a></h2>
   </div>
+</div>
   
-  <div class="split right">
-    <div class="centered">
-      <h2><a style="text-decoration:none;" href="vordlus.html">Mängukonsoolide võrdlus ja soovitus</a></h2>
-    </div>
+<div class="split right">
+  <div class="centered">
+    <h2><a style="text-decoration:none;" href="vordlus.html">Mängukonsoolide võrdlus ja soovitus</a></h2>
   </div>
+</div>
 
 </body>
 </html>
