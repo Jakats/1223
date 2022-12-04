@@ -1,32 +1,48 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Avaleht</title><meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="home.css">
-</head>
-<body>
+<html lang="et">
+    <head>
+        <title>Avaleht</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="home.css">
+    </head>
 
-<div class="navbar">
-  <ul>
-    <li><a href="home.html">Avaleht</a></li>
-    <li><a href="info.html">Info</a></li>
-    <li><a href="vordlus.html">Võrdlus</a></li>
-  </ul> 
-</div>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="home.html">Avaleht</a>
+                </li>
+                <li>
+                    <a href="info.html">Info</a>
+                </li>
+                <li>
+                    <a href="vordlus.html">Võrdlus</a>
+                </li>
+            </ul>
+        </div>
 
-<div class="split left">
-  <a href="info.html" class="fill-div"></a>
-  <div class="centered">
-    <h2><a style="text-decoration:none;", href ="info.html">Mängukonsoolide info</a></h2>
-  </div>
-</div>
+        <div class="split left" id="leftcontainer">
+            <a href="info.html" class="fill-div"></a>
 
-<div class="split right">
-  <a href="vordlus.html" class="fill-div"></a>
-  <div class="centered">
-    <h2><a style="text-decoration:none;" href="vordlus.html">Mängukonsoolide võrdlus ja soovitus</a></h2>
-  </div>
-</div>
-<br>
-</body>
+            <div class="centered">
+                <h2 id="lefttext">
+                    <a href="info.html">Mängukonsoolide info</a>
+                </h2>
+            </div>
+
+        </div>
+
+        <div class="split right" id="rightcontainer">
+            <a href="vordlus.html" class="fill-div"></a>
+
+            <div class="centered">
+                <h2 id="righttext">
+                    <a href="vordlus.html">Mängukonsoolide võrdlus ja soovitus</a>
+                </h2>
+            </div>
+
+        </div>
+
+    </body>
 </html>

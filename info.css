@@ -1,40 +1,11 @@
 body {
     font-family: Arial;
-}
-
-.navbar {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-}
-
-div.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-  
-div.navbar li {
-    float: left;
-}
-  
-div.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-div.navbar li a:hover {
-    background-color: #111;
+    background-color: #B69D74;
 }
 
 .quickselect {
+    padding-top: 14vh;
+    padding-bottom: 13vh;
     position: relative;
     align-content: center;
 }
@@ -44,7 +15,7 @@ div.quickselect ul {
     display: flex;  
     padding: 0;
     list-style-type: none;
-    overflow: hidden;
+    overflow: visible;
 }
   
 div.quickselect li {
@@ -54,4 +25,22 @@ div.quickselect li {
 
 div.quickselect input {
     height: 20vh;
+    max-width: 100%;
+    width: auto;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+div.quickselect input:hover {
+    transform: scale(1.2);
+}
+
+
+.textbox {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.textbox:last-child {
+    padding-bottom: 150px;
 }

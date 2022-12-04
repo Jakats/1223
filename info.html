@@ -1,61 +1,62 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Info</title>
-<link rel="stylesheet" href="info.css">
-</head>
-<body style="background-color: #B69D74">
+<html lang="et">
+    <head>
+        <title>Info</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="info.css">
+        <script src="info.js"></script>
+    </head>
 
-<script type="text/javascript" >
-    //Function snipets from: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
-    function scrollfunction(elid) {
-        const element = document.getElementById(elid);
-        element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-    }
-</script>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="home.html">Avaleht</a>
+                </li>
+                <li>
+                    <a href="info.html">Info</a>
+                </li>
+                <li>
+                    <a href="vordlus.html">Võrdlus</a>
+                </li>
+            </ul>
+        </div>
 
+        <div class="content">
 
-<div class="navbar">
-    <ul>
-        <li><a href="home.html">Avaleht</a></li>
-        <li><a href="info.html">Info</a></li>
-        <li><a href="vordlus.html">Võrdlus</a></li>
-    </ul> 
-</div>
+            <div class="quickselect">
+                <ul>
+                    <li>
+                        <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Xbox_Series_X_logo.svg" alt="Xbox SVG" onClick="scrollfunction('xbox')">
+                    </li>
+                    <li>
+                        <input type="image" src="https://www.logo.wine/a/logo/PlayStation/PlayStation-Logo.wine.svg" alt="PS5 SVG" onClick="scrollfunction('ps5')">
+                    </li>
+                    <li>
+                        <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Nintendo_Switch_Logo.svg" alt="Switch SVG" onClick="scrollfunction('switch')">
+                    </li>
+                </ul>
+            </div>
 
-<p>&nbsp;</p>
+            <div class="textbox">
+                <h3 id="xbox">Xbox Series X</h3>
+                <p>Xbox Series X on Microsofti vastus Sony Playstation 5-le. Tegu on mängukonsooliga, mis on võimsam ja ilusama disainiga, kui Playstation 5, kuid eksklusiivsied mänge on Xbox-il palju vähem kui Playstationil. <br>Kuid kui Sony konsoolidel on peale kahte aastat ikka tarneraskusi, on Microsoft raskustega hakkama saanud ning konsoole leidub pea igas tehnikapoes. </p>
+                <img src="https://media4.giphy.com/media/gHWT7cA7rRxwagVsPa/giphy.gif?cid=790b761132b070a9d5fd02a7673ffb986c1de0a2c40d79af&rid=giphy.gif&ct=g" alt="Xbox series X gif from giphy">
+            </div>
 
-<div class="quickselect">
-    <br><br><br><br><br><br><br><br><br>
-    <ul>
-        <li><input type="image" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Xbox_Series_X_logo.svg"  onClick="scrollfunction('xbox')"></li>
-        <li><input type="image" src="https://www.logo.wine/a/logo/PlayStation/PlayStation-Logo.wine.svg"  onClick="scrollfunction('ps5')"></li>
-        <li><input type="image" src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Nintendo_Switch_Logo.svg"  onClick="scrollfunction('switch')"></li>
-    </ul>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<p id="xbox">Xbox Series X</p>
-<p>Xbox Series X on Microsofti vastus Sony Playstation 5-le. Tegu on mängukonsooliga, mis on võimsam ja ilusama disainiga, kui Playstation 5, kuid eksklusiivsied mänge on Xbox-il palju vähem kui Playstationil. 
-<br>Kuid kui Sony konsoolidel on peale kahte aastat ikka tarneraskusi, on Microsoft raskustega hakkama saanud ning konsoole leidub pea igas tehnikapoes.
-</p>
-<p style ='text-align:center;'>
-<img src="https://media4.giphy.com/media/gHWT7cA7rRxwagVsPa/giphy.gif?cid=790b761132b070a9d5fd02a7673ffb986c1de0a2c40d79af&rid=giphy.gif&ct=g" height ='400',widht='400' alt="Xbox series X gif from giphy">
-</p>
-<br><br><br><br><br><br>
-<p id="ps5">Sony Playstation 5</p>
-<p>Playstation 5 on Sony kõige uuem mängukonsool, mida tutvustati maailmale 2020 aasta  Novembris. Tegemist on tippklassi mängukonsooliga, mis suudab edastada kuni 8k kvaliteediga pilti. Lisaks on konsoolil uue generatsiooni pult, mille haptiline tagasiside on ennekuulmatult hea.
-<br>Lisaks pakub Sony Playstation 5-le eksklusiivseid mänge, millest võib välja tuua näiteks: Spider-Man Miles-Morales,Sackboy: a Big Adventure ja Gran Turismo 7.
-</p>
-<p style ='text-align:center;'>
-<img src="https://media1.giphy.com/media/9BWF0WWyraTfHD6RHI/giphy.gif?cid=ecf05e476wplhnfocgaub0g2zs03s8u54ww378ukftlqf3q9&rid=giphy.gif&ct=g" height ='400',widht='400'alt="Playstation 5 gif from giphy">
-</p>
-<br><br><br><br><br><br>
-<p id="switch">Nintendo Switch</p>
-<p>Nintendo Switch on hübriid mängukonsool, millega saab mängida nii kodus kui liikudes. Switch on peresõbralik mängukonsool, mille populaarsemad mängud on näiteks: Mario kart 8, Super Mario Odyssey ja the Legend of Zelda. 
-</p>
-<p style ='text-align:center;'>
-<img src="https://media.tenor.com/kX17Sjvo5zAAAAAC/nintendo-switch.gif" height ='400',widht='400'alt="Nintendo Switch gif from Tenor">
-</p>
-<br><br><br><br>
-</body>
+            <div class="textbox">
+                <h3 id="ps5">Sony Playstation 5</h3>
+                <p>Playstation 5 on Sony kõige uuem mängukonsool, mida tutvustati maailmale 2020 aasta Novembris. Tegemist on tippklassi mängukonsooliga, mis suudab edastada kuni 8k kvaliteediga pilti. Lisaks on konsoolil uue generatsiooni pult, mille haptiline tagasiside on ennekuulmatult hea. <br>Lisaks pakub Sony Playstation 5-le eksklusiivseid mänge, millest võib välja tuua näiteks: Spider-Man Miles-Morales,Sackboy: a Big Adventure ja Gran Turismo 7. </p>
+                <img src="https://media1.giphy.com/media/9BWF0WWyraTfHD6RHI/giphy.gif?cid=ecf05e476wplhnfocgaub0g2zs03s8u54ww378ukftlqf3q9&rid=giphy.gif&ct=g" alt="Playstation 5 gif from giphy">
+            </div>
+
+            <div class="textbox">
+                <h3 id="switch">Nintendo Switch</h3>
+                <p>Nintendo Switch on hübriid mängukonsool, millega saab mängida nii kodus kui liikudes. Switch on peresõbralik mängukonsool, mille populaarsemad mängud on näiteks: Mario kart 8, Super Mario Odyssey ja the Legend of Zelda. </p>
+                <img src="https://media.tenor.com/kX17Sjvo5zAAAAAC/nintendo-switch.gif" alt="Nintendo Switch gif from Tenor">
+            </div>
+        </div>
+
+    </body>
 </html>
